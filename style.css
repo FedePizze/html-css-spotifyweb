@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* INIZIO ASIDE */
+aside{
+    position: fixed;
+    flex-flow: wrap column;
+    background-color: #000000;
+    width: 210px;
+    height: calc(100vh - 70px);
+    left: 0;
+    top: 0;
+    padding-bottom: 210px;
+}
+
+aside h3{
+    font-weight: 700;
+    color: white;
+}
+
+#logo{
+    width: 150px;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+[class*="icons"]{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.icons2{
+    filter: grayscale(100%);
+}
+
+aside span{
+    font-size: 13px;
+    font-weight: 600;
+    vertical-align: middle;
+    color: gray;
+}
+
+.box1icon2{
+    padding: 0 15px;
+}
+
+.box1icon1{
+    color: white;
+    border-left: 3px solid #a2ec2c;
+    padding: 0 12px;
+    line-height: 20px;
+}
+
+.asidebox2, .asidebox3{
+    padding: 15px;
+    display: block;
+}
+
+.asidebox2 span{
+    display: block;
+    margin: 15px 0;
+}
+
+.boxplus{
+    width: 30px;
+    height: 30px;
+    color: black;
+    background-color: grey;
+}
+
+.greybox{
+    color: black;
+    background-color: gray;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 7px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+[class*="box1icon"]{
+    margin: 10px 0;
+}
+
+#space1{
+    margin-bottom: 10px;
+}
+
+#space2{
+    margin-top: 10px;
+    color: white;
+}
+
+#profile{
+    display: inline-block;
+    padding: 5px 7px;
+    border-radius: 50%;
+    background-color: grey;   
+}
+
+#biancobold{
+    color: white;
+    font-weight: 600px;
+    font-size: 15px;
+}
+
+.asidebox3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#height{
+    height: 100%;
+}
+/* FINE ASIDE */
+
+
+
+/* INIZIO HEADER */
+header{
+    padding-left: 210px;
+    background-color: #080b12;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header div{
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    border: 2px solid white;
+    padding: 9px 35px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+/* FINE HEADER */
+li{
+    display: inline-block;
+    color: grey;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px 15px;
+    padding: 5px 0px;
+}
+
+nav{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#bordoverde{
+    border-bottom: 3px solid #a2ec2c;
+}
+/* INIZIO NAV MAIN */
+
+/* FINE NAV MAIN */
+
+
+
+/* INIZIO MAIN */
+main{
+    padding: 0px 15px 70px 225px;
+    background-color: #141922;
+}
+
+.listaalbum{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+    justify-content: flex-start;
+}
+
+[class*="coveralbum"]{
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.coveralbum1{
+    background-image: url("img/metal_lifting.jpg");
+}
+
+.coveralbum2{
+    background-image: url("img/stranger.jpeg");
+}
+
+.coveralbum3{
+    background-image: url("img/aquietplace.jpeg");
+}
+
+.coveralbum4{
+    background-image: url("img/split.jpeg");
+}
+
+.coveralbum5{
+    background-image: url("img/cure.jpeg");
+}
+
+.coveralbum6{
+    background-image: url("img/radar.jpeg");
+}
+
+.coveralbum7{
+    background-image: url("img/mixdaily.jpeg");
+}
+
+.coveralbum8{
+    background-image: url("img/sinister.jpeg");
+}
+
+.coveralbum9{
+    background-image: url("img/youg.jpeg");
+    border-radius: 50%;
+}
+
+.coveralbum10{
+    background-image: url("img/einaudi.jpeg");
+    border-radius: 50%;
+}
+
+.boxalbum{
+    width: 200px;
+    text-align: center;
+}
+
+main h2{
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+main h3{
+    margin-top: 10px;
+    font-size: 17px;
+    color: white;
+}
+
+main h5{
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
+/* FINE MAIN */
+
+
+
+/* INIZIO FOOTER */
+footer{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #282828;
+    bottom: 0;
+}
+
+[class*="footerbox"]{
+    display: flex;
+}
+
+.copertinaalbum{
+    background-image: url("img/sinister.jpeg");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.footerbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.footerbox1 h5{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.footerbox1 h6{
+    color: gray;
+    font-size: 10px;
+}
+
+.fa-heart, .fa-folder{
+    color: gray;
+    font-size: 15px;
+}
+
+.fa-heart{
+    margin-left: 15px;
+}
+
+.footerbox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    color: white;   
+}
+
+[class*="footercenter"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 11px;
+}
+
+#cerchio{
+    padding: 3px 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+    vertical-align: middle;
+}
+
+.footercenter2{
+    margin-top: 5px;
+}
+
+.inline-block{
+    display: flex
+}
+
+#barrabianca1{
+    width: 100px;
+    height: 3px;
+    background-color: white;
+}
+
+#barragrigia1{
+    width: 300px;
+    height: 3px;
+    background-color: grey;
+}
+
+.footerbox3{
+    color: white;
+    font-size: 11px;
+    gap: 15px;
+    margin-right: 15px;
+}
+
+#barrabianca2{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+}
+
+#barragrigia2{
+    width: 90px;
+    height: 3px;
+    background-color: grey;
+}
+/* FINE FOOTER */
