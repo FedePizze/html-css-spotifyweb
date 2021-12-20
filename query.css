@@ -124,6 +124,22 @@
     .list h5, .grey{
         font-size: 7px;
     }
+
+    .musicbox li{
+        font-size: 6px;
+        font-weight: 600;
+        margin: 0px 2px;
+        padding: 5px 0px;
+    }
+
+    .white{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .boxalbum{
+        margin: 20px 5px 0px 5px;
+    }
  /* FINE MAIN */
 
 
