@@ -71,5 +71,11 @@
     .footer3{
         width: 25%;
     }
+
+    #line{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
  /* FINE FOOTER */
 }
