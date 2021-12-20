@@ -1,24 +1,5 @@
 /* MEDIA QUERY */
-@media screen and (max-width: 320px){
-    .sidebar{
-        width: 50px;
-    }
-
-    .container{
-        width: calc(100% - 50px);
-    }
-
-    .bottontop{
-        width: calc(100% - 50px);
-    }
-
-    .none{
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 765px) and (max-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
 
  /* MAIN */
     [class*="cover"]{
@@ -40,7 +21,7 @@
  /* FINE MAIN */
 }
 
-@media screen and (min-width: 325px) and (max-width: 760px){
+@media screen and (min-width: 760px) and (max-width: 1400px){
 
  /* MAIN */
     [class*="cover"]{
@@ -76,6 +57,150 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+    }
+ /* FINE FOOTER */
+}
+
+@media screen and (min-width: 320px) and (max-width: 755px){
+    .sidebar{
+        width: 50px;
+    }
+
+    .container{
+        width: calc(100% - 50px);
+    }
+
+    .bottontop{
+        width: calc(100% - 50px);
+    }
+
+    .none{
+        display: none;
+    }
+
+
+
+ /* ASIDE */
+    #logo{
+        width: 50px;
+        margin: 20px 0px;
+        background-image: url('img/logo-small.svg');
+        background-position: center;
+    }
+
+    #profile{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-size: 15px 15px;
+        background-position: center;
+    }
+ /* FINE ASIDE */
+
+
+
+ /* MAIN */
+    [class*="cover"]{
+        height: 110px;
+    }
+
+    .boxalbum{
+        width: 110px;
+    }
+
+    .play{
+        width: 110px;
+        height: 110px;
+    }
+
+    .list{
+        gap: 0px;
+    }
+
+    .list h3{
+        font-size: 12px;
+    }
+    
+    .list h5, .grey{
+        font-size: 7px;
+    }
+ /* FINE MAIN */
+
+
+
+ /* FOOTER */
+    .footer1{
+        width: 25%;
+    }
+
+    .footer3{
+        width: 20%;
+    }
+
+    [class*="footercenter"]{
+        gap: 5px;
+        font-size: 8px;
+    }
+
+    #line{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .barra1{
+        width: 40%;
+    }
+
+    .footercenter2{
+        justify-content: center;
+    }
+
+    .fa-list-ul, .fa-desktop, .fa-volume-up{
+        font-size: 5px;
+    }
+
+    #simboli{
+        display: flex;
+        width: 30%;
+    }
+
+    .barra2{
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .fa-desktop{
+        margin: 0px 0px;
+    }
+
+    .footer1 h5{
+        color: white;
+        font-size: 9px;
+        margin-bottom: 2px;
+    }
+    
+    .footer1 h6{
+        color: gray;
+        font-size: 6px;
+    }
+    
+    .copertinaalbum{
+       
+        width: 50%;
+        height: 20px;
+    }
+
+    #name{
+        width: 40%;
+    }
+
+    #line{
+        width: 15%;
+    }
+
+    .fa-heart, .fa-folder{
+        font-size: 10px;
     }
  /* FINE FOOTER */
 }
