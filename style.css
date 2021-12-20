@@ -54,11 +54,11 @@ main::after{
 }
 
 .icons2{
-    filter: grayscale(100%);
+    filter: invert(50%);
 }
 
 .box1icon2{
-    color: white;
+    color: grey;
     padding: 0px 15px;
     margin: 10px 0px;
 }
@@ -204,12 +204,10 @@ main::after{
 
 .musicbox li{
     display: inline-block;
-    color: gray;
     font-size: 13px;
     font-weight: 600;
     margin: 0px 15px;
     padding: 5px 0px;
-    width: 115px;
 }
 
 .musicbox nav{
@@ -218,37 +216,121 @@ main::after{
 
 .greenborder{
     border-top: 3px solid #a2ec2c;
-    width: 40px;
+    width: 50px;
 }
 
 #black{
     color: black;
 }
 
+.greyli{
+    color: gray;
+}
+
+.noli{
+    color: #141922;;
+}
+
 .boxalbum{
+    width: 200px;
     text-align: center;
+    margin: 35px 5px 0px 5px;
 }
 
 .list{
     display: flex;
-    gap: 29px;
-    margin: 15px 0px;
+    gap: 5px;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-[class*="cover"]{
-    width: 190px;
-    height: 190px;
+.boxrel{
     position: relative;
-    background-size: contain;
-    background-image: url('img/metal_lifting.jpg');
+}
+
+.cover1{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("img/metal_lifting.jpg");
+}
+
+.cover2{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/stranger.jpeg");
+}
+
+.cover3{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/aquietplace.jpeg");
+}
+
+.cover4{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/split.jpeg");
+}
+
+.cover5{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/cure.jpeg");
+}
+
+.cover6{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/sinister.jpeg");
+}
+
+.cover7{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/radar.jpeg");
+}
+
+.cover8{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/mixdaily.jpeg");
+}
+
+.cover9{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/youg.jpeg");
+}
+
+.cover10{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/einaudi.jpeg");
 }
 
 .play{
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -263,9 +345,7 @@ main::after{
     font-size: 20px;
     color: white;
     margin-top: 35px;
-    margin-bottom: 10px;
 }
-
 
 .list h3{
     margin-top: 10px;
@@ -411,21 +491,3 @@ footer{
 /* FINE FOOTER3 */
 
 /* FINE FOOTER */
-
-
-
-
-/* MEDIA QUERY */
-@media screen and (max-width: 600px){
-    .sidebar{
-        width: 50px;
-    }
-
-    .container{
-        width: calc(100% - 50px);
-    }
-
-    .bottontop{
-        width: calc(100% - 50px);
-    }
-}
