@@ -5,30 +5,49 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* INIZIO ASIDE */
-aside{
-    position: fixed;
-    flex-flow: wrap column;
-    background-color: #000000;
-    width: 210px;
-    height: calc(100vh - 70px);
-    left: 0;
-    top: 0;
-    padding-bottom: 210px;
+body{
+    width: 100%;
+    height: 100vh;
 }
 
-aside h3{
-    font-weight: 700;
-    color: white;
+
+
+/* MAIN */
+main{
+    height: calc(100% - 80px);
+}
+
+main::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* FINE MAIN */
+
+
+
+/* SIDEBAR */
+.sidebar{
+    height: 100%;
+    min-height: 500px;
+    width: 200px;
+    background-color: black;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.top{
+    height: calc(100% - 50px);
 }
 
 #logo{
-    width: 150px;
-    padding: 0 15px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding: 20px 15px;
+    width: 70%;
 }
 
+/* ASIDE1 */
 [class*="icons"]{
     width: 20px;
     vertical-align: middle;
@@ -38,39 +57,33 @@ aside h3{
     filter: grayscale(100%);
 }
 
-aside span{
-    font-size: 13px;
-    font-weight: 600;
-    vertical-align: middle;
-    color: gray;
-}
-
 .box1icon2{
-    padding: 0 15px;
+    color: white;
+    padding: 0px 15px;
+    margin: 10px 0px;
 }
 
 .box1icon1{
     color: white;
     border-left: 3px solid #a2ec2c;
-    padding: 0 12px;
     line-height: 20px;
+    padding: 0px 12px;
+    margin-bottom: 10px;
 }
 
-.asidebox2, .asidebox3{
-    padding: 15px;
-    display: block;
+.asidetext{
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 500;
 }
+/* FINE ASIDE1 */
 
-.asidebox2 span{
-    display: block;
-    margin: 15px 0;
-}
 
-.boxplus{
-    width: 30px;
-    height: 30px;
-    color: black;
-    background-color: grey;
+
+/* ASIDE2 */
+.aside2{
+    padding: 0px 15px;
+    color: gray;
 }
 
 .greybox{
@@ -78,208 +91,208 @@ aside span{
     background-color: gray;
     display: inline-block;
     text-align: center;
-    padding: 5px 7px;
+    padding: 5px 3px;
+    margin: 5px 0px;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 13px;
 }
 
-[class*="box1icon"]{
-    margin: 10px 0;
+.aside2 li, .textgrey{
+    color: gray;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 5px 0px;
+    width: 115px;
+}
+
+.aside2 li{
+    display: inline-block;
+}
+
+.asidetitle{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+/* FINE ASIDE2 */
+
+
+
+/* ASIDE3 */
+.aside3{
+    width: 100%;
+    background-color: black;
+    padding: 5px 15px;
 }
 
 #space1{
-    margin-bottom: 10px;
+    color: grey;
+    font-size: 12px;
+    font-weight: 500;
 }
 
-#space2{
-    margin-top: 10px;
-    color: white;
+[id*="space"]{
+    padding: 5px 0px;
 }
 
 #profile{
-    display: inline-block;
-    padding: 5px 7px;
+    color: white;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
     border-radius: 50%;
-    background-color: grey;   
+    display: inline-block;
 }
 
 #biancobold{
     color: white;
-    font-weight: 600px;
     font-size: 15px;
+    font-weight: 600;
 }
+/* FINE ASIDE3 */
 
-.asidebox3{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    padding-top: 10px;
-    padding-left: 10px;
-}
+/* FINE SIDEBAR */
 
-#height{
+
+.container{
+    float: left;
+    width: calc(100% - 200px);
+    overflow-y: scroll;
     height: 100%;
 }
-/* FINE ASIDE */
 
-
-
-/* INIZIO HEADER */
-header{
-    padding-left: 210px;
-    background-color: #080b12;
-    height: 70px;
-    width: 100%;
+/* BOTTON */
+.bottontop{
+    width: calc(100% - 200px);
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 70px;
+    top: 0;
+    right: 0;
+    background-color: #080b12;
+    color: white;
+    z-index: 1;
 }
 
-header div{
+.botton{
     color: white;
     display: inline-block;
     font-size: 12px;
     font-weight: 500;
     border: 2px solid white;
-    padding: 9px 35px;
+    padding: 7px 15px;
     border-radius: 30px;
-    margin-right: 15px;
+    margin-right: 30px;
 }
-/* FINE HEADER */
+/* FINE BOTTON */
 
 
 
-/* INIZIO NAV MAIN */
-li{
+/* MUSICBOX */
+.musicbox{
+    padding: 90px 15px 40px 15px;
+    width: 100%;
+    background-color: #141922;
+}
+
+.musicbox li{
     display: inline-block;
-    color: grey;
+    color: gray;
     font-size: 13px;
     font-weight: 600;
     margin: 0px 15px;
     padding: 5px 0px;
+    width: 115px;
 }
 
-nav{
+.musicbox nav{
     text-align: center;
-    padding-top: 15px;
 }
 
-#bordoverde{
-    border-bottom: 3px solid #a2ec2c;
-}
-/* FINE NAV MAIN */
-
-
-
-/* INIZIO MAIN */
-main{
-    padding: 0px 15px 70px 225px;
-    background-color: #141922;
-    height: calc(100vh - 140px);
-    overflow-y: scroll;
+.greenborder{
+    border-top: 3px solid #a2ec2c;
+    width: 40px;
 }
 
-.listaalbum{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin: 15px 0px;
-    justify-content: flex-start;
-}
-
-[class*="coveralbum"]{
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-}
-
-.coveralbum1{
-    background-image: url("img/metal_lifting.jpg");
-}
-
-.coveralbum2{
-    background-image: url("img/stranger.jpeg");
-}
-
-.coveralbum3{
-    background-image: url("img/aquietplace.jpeg");
-}
-
-.coveralbum4{
-    background-image: url("img/split.jpeg");
-}
-
-.coveralbum5{
-    background-image: url("img/cure.jpeg");
-}
-
-.coveralbum6{
-    background-image: url("img/radar.jpeg");
-}
-
-.coveralbum7{
-    background-image: url("img/mixdaily.jpeg");
-}
-
-.coveralbum8{
-    background-image: url("img/sinister.jpeg");
-}
-
-.coveralbum9{
-    background-image: url("img/youg.jpeg");
-    border-radius: 50%;
-}
-
-.coveralbum10{
-    background-image: url("img/einaudi.jpeg");
-    border-radius: 50%;
+#black{
+    color: black;
 }
 
 .boxalbum{
-    width: 200px;
     text-align: center;
 }
 
-main h2{
+.list{
+    display: flex;
+    gap: 29px;
+    margin: 15px 0px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+[class*="cover"]{
+    width: 190px;
+    height: 190px;
+    position: relative;
+    background-size: contain;
+    background-image: url('img/metal_lifting.jpg');
+    background-repeat: no-repeat;
+}
+
+.play{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.radius{
+    border-radius: 50%;
+}
+
+.list h2, .white{
     font-size: 20px;
     color: white;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 
 
-main h3{
+.list h3{
     margin-top: 10px;
     font-size: 17px;
     color: white;
+    text-align: center;
 }
 
-main h5{
+.list h5, .grey{
     margin-top: 10px;
     font-size: 12px;
     color: gray;
 }
-/* FINE MAIN */
+/* FINE MUSICBOX */
 
 
 
-/* INIZIO FOOTER */
+/* FOOTER */
 footer{
-    /* position: fixed; */
+    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 70px;
     background-color: #282828;
-    bottom: 0;
+    height: 80px;
 }
 
-[class*="footerbox"]{
-    display: flex;
-}
-
+/* FOOTER1 */
 .copertinaalbum{
     background-image: url("img/sinister.jpeg");
     background-size: cover;
@@ -287,21 +300,22 @@ footer{
     height: 40px;
 }
 
-.footerbox1{
+.footer1{
+    width: 15%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
     margin-left: 15px;
 }
 
-.footerbox1 h5{
+.footer1 h5{
     color: white;
     font-size: 15px;
     margin-bottom: 2px;
 }
 
-.footerbox1 h6{
+.footer1 h6{
     color: gray;
     font-size: 10px;
 }
@@ -309,18 +323,20 @@ footer{
 .fa-heart, .fa-folder{
     color: gray;
     font-size: 15px;
+    padding: 0px 4px;
 }
+/* FINE FOOTER1 */
 
-.fa-heart{
-    margin-left: 15px;
-}
 
-.footerbox2{
+
+/* FOOTER2 */
+.footer2{
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap column;
-    color: white;   
+    color: white;
 }
 
 [class*="footercenter"]{
@@ -339,41 +355,77 @@ footer{
 }
 
 .footercenter2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 5px;
 }
 
-.inline-block{
-    display: flex
+.barra1{
+    width: 80%;
 }
+/* FINE FOOTER2 */
 
-#barrabianca1{
-    width: 100px;
-    height: 3px;
-    background-color: white;
-}
 
-#barragrigia1{
-    width: 300px;
-    height: 3px;
-    background-color: grey;
-}
 
-.footerbox3{
+/* FOOTER3 */
+.footer3{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
     color: white;
     font-size: 11px;
     gap: 15px;
     margin-right: 15px;
 }
 
-#barrabianca2{
-    width: 30px;
+.fa-desktop{
+    margin: 0px 5px;
+}
+
+[class*="barra"]{
+    display: flex;
+}
+
+.barra2{
+    width: 50%;
+}
+
+.barrabianca2{
+    width: 30%;
     height: 3px;
     background-color: white;
 }
 
-#barragrigia2{
-    width: 90px;
+.barragrigia2{
+    width: 90%;
     height: 3px;
     background-color: grey;
 }
+
+.fa-list-ul, .fa-desktop, .fa-volume-up{
+    padding: 0px 4px;
+}
+/* FINE FOOTER3 */
+
 /* FINE FOOTER */
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 600px){
+    .sidebar{
+        width: 50px;
+    }
+
+    .container{
+        width: calc(100% - 50px);
+    }
+
+    .bottontop{
+        width: calc(100% - 50px);
+    }
+}
