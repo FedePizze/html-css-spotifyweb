@@ -95,6 +95,18 @@
         background-size: 15px 15px;
         background-position: center;
     }
+
+    .icons2 {
+        width: 15px;
+        margin: auto;
+        margin-left: 3px;
+    }
+
+    
+
+    hr{
+        display: none;
+    }
  /* FINE ASIDE */
 
 
@@ -141,6 +153,10 @@
         margin: 20px 5px 0px 5px;
     }
  /* FINE MAIN */
+
+ /* BOTTON */
+
+ /* FINE BOTTON */
 
 
 
