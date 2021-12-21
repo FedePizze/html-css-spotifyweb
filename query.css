@@ -102,8 +102,6 @@
         margin-left: 3px;
     }
 
-    
-
     hr{
         display: none;
     }
@@ -155,7 +153,9 @@
  /* FINE MAIN */
 
  /* BOTTON */
-
+ .botton{
+    font-size: 8px;
+}
  /* FINE BOTTON */
 
 
