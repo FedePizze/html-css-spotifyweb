@@ -16,6 +16,7 @@
     <main>
 
         <div class="sidebar">
+            
             <div class="top">
                 <div id="logo"></div>
 
@@ -39,22 +40,20 @@
                 <div class="aside2 none">
                     <h3 class="asidetitle">PLAYLIST</h3>
                             
-                    <span class="textgrey"><div class="greybox"><i class="fas fa-plus icons3"></i></div>Cerca Playlist</span> <!-- scritta crea playlist -->
-                            
-                    <nav>
-                        <ul>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                        </ul>
-                    </nav>
+                    <span class="textgrey"><div class="greybox"><i class="fas fa-plus icons3"></i></div>Cerca Playlist</span>
                 </div>
-
-                <div></div>
+                
+                <div class="aside4">
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="aside3">
@@ -71,19 +70,23 @@
         </div>
 
         <div class="container">
+            <!-- <div class="bottontop">
+                <h2 class="botton"><a href="#">EFFETTUA L'UPGRADE</a></h2>
+            </div> -->
+
             <div class="bottontop">
-                <h2 class="botton">EFFETTUA L'UPGRADE</h2>
+                <a class="botton" href="#">EFFETTUA L'UPGRADE</a>
             </div>
 
             <div class="musicbox">
                 <nav>
                     <ul>
-                        <li class="greyli">IN EVIDENZA</li>
-                        <li class="greyli">PODCAST</li>
-                        <li class="greyli">CLASSIFICHE</li>
-                        <li class="greyli">GENERI E MOOD</li>
-                        <li class="greyli">NUOVE USCITE</li>
-                        <li class="greyli">SCOPRI</li>
+                        <li><a class="active" href="#">EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
                     </ul>
                 </nav>
 
@@ -91,8 +94,8 @@
                 <div class="list">
                     <div class="boxalbum">
                         <div class="boxrel">
-                            <div class="cover1"></div>
-                            <div class="play"></div>
+                            <img class="cover1" src="img/metal_lifting.jpg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>Heavy Metal</h3>
                         <h5>Subtitle</h5>
@@ -100,8 +103,8 @@
 
                     <div class="boxalbum">
                         <div class="boxrel">
-                            <div class="cover2"></div>
-                            <div class="play"></div>
+                            <img class="cover1" src="img/stranger.jpeg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>Stranger Things, Vol1 (a Netflix original Series Soundtrack)</h3>
                         <h5>Kyle Dixon & Michael Stein</h5>
@@ -109,8 +112,8 @@
 
                     <div class="boxalbum">
                         <div class="boxrel">
-                            <div class="cover3"></div>
-                            <div class="play"></div>
+                            <img class="cover1" src="img/aquietplace.jpeg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>A quiet place</h3>
                         <h5>Subtitle</h5>
@@ -118,8 +121,8 @@
 
                     <div class="boxalbum">
                         <div class="boxrel">
-                            <div class="cover4"></div>
-                            <div class="play"></div>
+                            <img class="cover1" src="img/split.jpeg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>Split</h3>
                         <h5>Subtitle</h5>
@@ -127,8 +130,8 @@
                 
                     <div class="boxalbum">
                         <div class="boxrel">
-                            <div class="cover5"></div>
-                            <div class="play"></div>
+                            <img class="cover1" src="img/cure.jpeg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>A cure for wellness</h3>
                         <h5>Subtitle</h5>
@@ -136,8 +139,8 @@
 
                     <div class="boxalbum">
                         <div class="boxrel">
-                            <div class="cover6"></div>
-                            <div class="play"></div>
+                            <img class="cover1" src="img/sinister.jpeg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>Sinister</h3>
                         <h5>Subtitle</h5>
@@ -148,15 +151,17 @@
                 <h5 class="grey">Più ascolti, più accurati saranno i suggerimenti</h5>
                 <div class="list">
                     <div class="boxalbum">
-                        <div class="cover7">
-                            <div class="play"></div>
+                        <div class="boxrel">
+                            <img class="cover1" src="img/radar.jpeg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>Relase Radar</h3>
                     </div>
 
                     <div class="boxalbum">
-                        <div class="cover8">
-                            <div class="play"></div>
+                        <div class="boxrel">
+                            <img class="cover1" src="img/mixdaily.jpeg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>Daily Mix 1</h3>
                     </div>
@@ -166,15 +171,17 @@
                 <h5 class="grey">Più ascolti, più accurati saranno i suggerimenti</h5>
                 <div class="list">
                     <div class="boxalbum">
-                        <div class="cover9 radius">
-                            <div class="play"></div>
+                        <div class="boxrel">
+                            <img class="cover2" src="img/youg.jpeg" alt="">
+                            <div class="play radius"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>Lana Del Rey</h3>
                     </div>
 
                     <div class="boxalbum">
-                        <div class="cover10 radius">
-                            <div class="play"></div>
+                        <div class="boxrel">
+                            <img class="cover2" src="img/einaudi.jpeg" alt="">
+                            <div class="play radius"><i class="far fa-play-circle"></i></div>
                         </div>
                         <h3>Ludovico Einaudi</h3>
                     </div>
@@ -210,7 +217,7 @@
             <div class="footercenter2">
                 <span>0:25</span>
                 <div class="barra1">
-                    <div class="barrabianca1"></div>
+                    <div class="barrabianca1"><div id="circle"></div></div>
                     <div class="barragrigia1"></div>
                 </div>
                 <span>4.55</span>
