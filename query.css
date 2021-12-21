@@ -1,5 +1,5 @@
 /* MEDIA QUERY */
-@media screen and (min-width: 1400px) and (max-width: 1600px) {
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
 
  /* MAIN */
     [class*="cover"]{
