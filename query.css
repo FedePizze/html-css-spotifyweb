@@ -126,6 +126,11 @@
         width: 25%;
     }
 
+    .copertinaalbum{
+        width: 20px;
+        height: 20px;
+    }
+
     .footer3{
         width: 20%;
     }
@@ -176,20 +181,6 @@
     .footer1 h6{
         color: gray;
         font-size: 6px;
-    }
-    
-    .copertinaalbum{
-       
-        width: 50%;
-        height: 20px;
-    }
-
-    #name{
-        width: 40%;
-    }
-
-    #line{
-        width: 15%;
     }
 
     .fa-heart, .fa-folder{
