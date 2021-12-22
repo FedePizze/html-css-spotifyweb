@@ -353,10 +353,12 @@ footer{
 
 /* FOOTER1 */
 .copertinaalbum{
-    background-image: url("img/sinister.jpeg");
-    background-size: cover;
     width: 40px;
     height: 40px;
+}
+
+#footeralbum{
+    width: 100%;
 }
 
 .footer1{
