@@ -2,44 +2,18 @@
 @media screen and (min-width: 1400px) and (max-width: 1500px) {
 
  /* MAIN */
-    [class*="cover"]{
-        height: 270px;
-    }
-
-    .boxalbum{
-        width: 270px;
-    }
-
-    .play{
-        width: 270px;
-        height: 270px;
-    }
-
-    .list{
-        gap: 7px;
-    }
+ .boxalbum{
+    width: calc(100% / 4);
+}
  /* FINE MAIN */
 }
 
 @media screen and (min-width: 760px) and (max-width: 1400px){
 
  /* MAIN */
-    [class*="cover"]{
-        height: 250px;
-    }
-
-    .boxalbum{
-        width: 250px;
-    }
-
-    .play{
-        width: 250px;
-        height: 250px;
-    }
-
-    .list{
-        gap: 0px;
-    }
+ .boxalbum{
+    width: calc(100% / 4);
+}
  /* FINE MAIN */
 
 
@@ -110,17 +84,8 @@
 
 
  /* MAIN */
-    [class*="cover"]{
-        height: 110px;
-    }
-
     .boxalbum{
-        width: 110px;
-    }
-
-    .play{
-        width: 110px;
-        height: 110px;
+        width: calc(100% / 2);
     }
 
     .list{
@@ -145,10 +110,6 @@
     .white{
         font-size: 12px;
         margin-top: 20px;
-    }
-
-    .boxalbum{
-        margin: 20px 5px 0px 5px;
     }
  /* FINE MAIN */
 
